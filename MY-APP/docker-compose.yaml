@@ -1,0 +1,21 @@
+service
+ 
+
+db
+images:postgre
+
+redis
+images:redis
+
+Result
+images:working-app
+ports:
+-5001:80
+
+Vote
+images:voting-app
+ports:
+- 5000:80 
+
+Worker
+images:working-app
