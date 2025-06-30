@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head><title>Results</title></head>
+  <body>
+    <h1>Voting Results</h1>
+    <ul>
+      {% for option, count in votes %}
+        <li>{{ option }}: {{ count }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
