@@ -15,7 +15,7 @@ services:
       - redis
 
   result:
-    image: working-app
+    image: result-app
     ports:
       - "5001:80"
     depends_on:
